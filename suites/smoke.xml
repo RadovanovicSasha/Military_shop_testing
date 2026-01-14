@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="MilitaryShop Smoke Suite"
+       parallel="classes"
+       thread-count="2">
+
+    <!-- Globalni parametri -->
+    <parameter name="baseUrl" value="https://www.militaryshop.rs"/>
+    <parameter name="headless" value="false"/>
+    <parameter name="baseUrl" value="https://www.militaryshop.rs/moj-nalog/"/>
+
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="tests"/>
+        </packages>
+    </test>
+
+</suite>
