@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 
-public class MilitaryShopSmokeTest extends BaseTest {
+public class MilitaryShopSmokeTests extends BaseTest {
 
     @Test(groups = {"Smoke"})
     public void smoke_loginPageHasFields() {
