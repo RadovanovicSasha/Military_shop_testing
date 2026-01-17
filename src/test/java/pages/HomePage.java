@@ -8,7 +8,7 @@ public class HomePage {
     private final WebDriver driver;
 
     // Link "Uloguj se" postoji SAMO kada nisi ulogovan
-    private final By loginLink = By.linkText("Uloguj se");
+    private final By linkZaLogovanje = By.linkText("Uloguj se");
 
     // Link "O nama"
     private final By oNamaLink = By.linkText("O NAMA");
@@ -18,7 +18,7 @@ public class HomePage {
     }
 
     public boolean isLoggedIn() {
-        return driver.findElements(loginLink).isEmpty();
+        return driver.findElements(linkZaLogovanje).isEmpty();
     }
 
     public void openONama() {
